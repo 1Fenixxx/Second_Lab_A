@@ -1,0 +1,6 @@
+D:\NAU labs\2й курс\2й семестр\ООП\GitHub repos\Second_Lab_A\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+D:\NAU labs\2й курс\2й семестр\ООП\GitHub repos\Second_Lab_A\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+D:\NAU labs\2й курс\2й семестр\ООП\GitHub repos\Second_Lab_A\ClassLibrary1\obj\Debug\ClassLibrary1.csprojAssemblyReference.cache
+D:\NAU labs\2й курс\2й семестр\ООП\GitHub repos\Second_Lab_A\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache
+D:\NAU labs\2й курс\2й семестр\ООП\GitHub repos\Second_Lab_A\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+D:\NAU labs\2й курс\2й семестр\ООП\GitHub repos\Second_Lab_A\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
