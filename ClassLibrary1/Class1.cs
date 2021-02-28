@@ -159,4 +159,14 @@ namespace ClassLib_1
             Environment.Exit(0);
         }
     }
+
+    public static class ErrorLogger
+    {
+        public static void Error(string paramName)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(" Wrong Symbol or empty entered to " + paramName + ", please try again.\n For float numbers please enter , instead of .\n For int number enter only numbers");
+            Console.ResetColor();
+        }
+    }
 }

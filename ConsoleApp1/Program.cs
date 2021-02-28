@@ -50,30 +50,51 @@ namespace ConsoleApp1
         {
             City.CityDesc desc = new City.CityDesc();
 
-            Console.Write("Enter city Region:");
-            desc.Region = Console.ReadLine();
-
-            Console.Write("Enter city Name:");
-            desc.Name = Console.ReadLine();
-
-            Console.Write("Enter city Mayor:");
-            desc.Mayor = Console.ReadLine();
-
-            Console.Write("Enter city Pollution:");
-            desc.Pollution = Convert.ToDouble(Console.ReadLine());
-
-            Console.Write("Enter city Crimes:");
-            desc.Crimes = Convert.ToInt32(Console.ReadLine());
-
-            Console.Write("Enter city ZonesNumber:");
-            desc.ZonesNumber = Convert.ToInt32(Console.ReadLine());
-
-            Console.Write("Enter city Population:");
-            desc.Population = Convert.ToInt32(Console.ReadLine());
+            paramInput("Region", ref desc.Region);
+            paramInput("Name", ref desc.Name);
+            paramInput("Mayor", ref desc.Mayor);
+            paramInput("Pollution", ref desc.Pollution);
+            paramInput("Crimes", ref desc.Crimes);
+            paramInput("Zones Count", ref desc.ZonesNumber);
+            paramInput("Population", ref desc.Population);
 
             data.Add(new City(desc));
         }
-
+        private static void paramInput(string paramName, ref string variable)
+        {
+            try
+            {
+                Console.Write("Enter city " + paramName + ":");
+                variable = Console.ReadLine();
+            }
+            catch { }
+        }
+        private static void paramInput(string paramName, ref double variable)
+        {
+            try
+            {
+                Console.Write("Enter device " + paramName + ":");
+                variable = Convert.ToDouble(Console.ReadLine());
+            }
+            catch
+            {
+                ErrorLogger.Error(paramName);
+                paramInput(paramName, ref variable);
+            }
+        }
+        private static void paramInput(string paramName, ref int variable)
+        {
+            try
+            {
+                Console.Write("Enter city " + paramName + ":");
+                variable = Convert.ToInt32(Console.ReadLine());
+            }
+            catch 
+            {
+                ErrorLogger.Error(paramName);
+                paramInput(paramName, ref variable);
+            }
+        }
         public static void DeleteCity()
         {
             Console.Write("Enter index of city for delete: ");
